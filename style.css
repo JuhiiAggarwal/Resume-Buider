@@ -1,0 +1,150 @@
+
+ h1{
+
+   color:black;
+   font-size: 30px;
+   margin-left:360px;
+
+ }
+ .btn{
+ 	color:white;
+ 	font-size: 20px;
+ 	background-color: red;
+ 
+    margin-top: 40px;
+
+ }
+ #container{
+ 	font-size: 20px;
+ 	font-style: "serif";
+
+ }
+ #fname{
+ 	padding: 12px;
+ }
+ #State{
+ 	padding: 12px;
+ }
+  #Address{
+ 	padding: 5px;
+ }
+  #cname{
+ 	padding: 6px;
+ }
+  #country{
+ 	padding: 8px;
+ }
+ #District{
+ 	padding:6px;
+ }
+ input#fname{
+ 	display:inline-block;
+ 	padding:4px;
+ 	font-size:16px;
+ 	border-radius:10px;
+ 	border:1px solid black;
+ 	width:7cm;
+ }
+ 
+ input#cname{
+ 	display:inline-block;
+ 	padding:4px;
+ 	font-size:16px;
+ 	border-radius:10px;
+ 	border:1px solid black;
+ 	width:7cm;
+ }
+  input#bname{
+ 	display:inline-block;
+ 	padding:4px;
+ 	font-size:16px;
+ 	border-radius:10px;
+ 	border:1px solid black;
+ 	width:7cm;
+ }
+  input#ename{
+ 	display:inline-block;
+ 	padding:4px;
+ 	font-size:16px;
+ 	border-radius:10px;
+ 	border:1px solid black;
+ 	width:7cm;
+ }
+  input#dname{
+ 	display:inline-block;
+ 	padding:4px;
+ 	font-size:16px;
+ 	border-radius:10px;
+ 	border:1px solid black;
+ 	width:7cm;
+ }
+ input#uploadphoto{
+ 	display:inline-block;
+ 	padding:4px;
+ 	font-size:16px;
+ 	border-radius:10px;
+ 	border:1px solid black;
+ 	width:7.6cm;
+ }
+ input#Adrress{
+ 	display:inline-block;
+ 	padding:6px;
+ 	font-size:16px;
+ 	border-radius:10px;
+ 	border:1px solid #black;
+ 	width:7cm;
+ }
+ input#mob{
+ 	display:inline-block;
+ 	padding:4px;
+ 	font-size:16px;
+ 	border-radius:10px;
+ 	border:1px solid black;
+ 	width:7.6cm;
+ }
+
+
+ label{
+      display:inline-block;
+      margin:0.1cm;
+      width:120px;
+      font-size:20px;
+      font-weight:bold;
+
+ }
+ select{
+ 		display:inline-block;
+ 	padding:4px;
+ 	font-size:16px;
+ 	border-radius:10px;
+ 	border:1px solid black;
+ 	width:7.6cm;
+
+ }
+ textarea{
+ 		display:inline-block;
+ 	padding:10px;
+ 	font-size:16px;
+ 	border-radius:10px;
+ 	border:1px solid black;
+ 	width:7cm;
+ }
+ #resume{
+ 	border:2px solid brown;
+     height:900px;
+           width:850px;
+  	padding:  10px 70px;
+  	border-radius: 8px;
+  	margin-top: 10px;
+  	background-color:cadetblue;
+ }
+
+   #main{
+           height:850px;
+           width:1000px;
+           border:2px solid;
+           background-color:cadetblue;
+
+       }
+ 
+  

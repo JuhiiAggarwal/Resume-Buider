@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Resume built-in App</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  
+</head>
+<body>
+	 <div id="main">
+
+<h1><u>Resume Builder</u></h1>
+<center>
+
+   
+		<div id ="container">
+		<form action="" onreset="checks()">
+		
+			<label for="fname">Enter&nbsp;Your&nbsp;Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="text" id="fname" name="firstname" placeholder="Your Name" required><br><br>
+
+			<label for="Collegename" id="clg">Enter&nbsp;College&nbsp;Name:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="text" id="cname" name="college_name" placeholder="Your College Name" required><br><br>
+
+			<label for="Degree">Enter&nbsp;Degree&nbsp;Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="text" id="dname" name="Degree" placeholder="Your Degree Name" required> <br><br>
+
+			<label for="Branch" id ="branch">Enter&nbsp;Branch:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				<input type="text" id="bname" name="branch" placeholder=" Branch " required> <br><br>
+
+			<label for="Experience"> Experience&nbsp;(inyears):</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="number" id="ename" name="Experience" placeholder="Experience" required> <br><br>
+
+			<label for="Skills">Technical&nbsp;Skills:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<textarea id="Address" name="Address" placeholder="Enter Your Skills" required></textarea><br><br>
+				
+		
+
+			  <label for="Country">&nbsp;Select&nbsp;Country:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<select id="country" name="Yourcountry" required>
+				<option selected disabled value="" >Select</option>
+		         <option value="INDIA">INDIA</option>
+                 <option value="USA">USA</option>
+                 <option value="JAPAN">JAPAN</option>
+                 <option value="MEXICO">MEXICO</option> 
+			</select><br><br>
+             
+             <label for="State">Select&nbsp;State:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<select id="State" name="YourState" required>
+				<option selected disabled value=""  >Select</option>
+		         <option value="Haryana">Haryana</option>
+                 <option value="Gujarat">Gujarat</option>
+                 <option value="Maharashtra">Maharashtra</option>
+                 <option value="Uttar Pradesh">Uttar Pradesh</option>  
+			</select><br><br>
+
+ <label for="District">&nbsp;&nbsp;Select&nbsp;District:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<select id="District"name=" Your District" required>
+				<option selected disabled value="" >Select</option>
+		         <option value="Rohtak">Rohtak</option>
+                 <option value="Hisar">Hisar</option>
+                 <option value="Bhopal">Bhopal</option>
+                 <option value="Ajmer">Ajmer</option>  
+			</select><br><br>
+            
+            <label for="Gender">Choose&nbsp;Gender:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select id="gender" required>
+                <option selected disabled value="" >Select</option>
+             <option value="Male">Male</option>
+                 <option value="Female">Female</option>
+                 <option value="Other">Other</option>  
+  
+           </select>
+             <br><br>
+
+            <label for="MobNo">&nbsp;&nbsp;Enter&nbsp;Mob_No:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="number" id="mob" name="MobNo" placeholder="Your Mob No." required/><br><br>
+
+
+    <label for="uploadphoto">&nbsp;&nbsp;Upload&nbsp;Photo:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="file" id="uploadphoto" name="file" accept="image/*" ></input> <br>
+          <input type="button" value="Build" class="btn" onclick="save()"class="btn"></input>
+	 
+	 <input type="reset"  class="btn" value="Clear"></input>
+	 </form>
+	</div></center>
+	</div>
+
+	<div id ="resume">
+    <h1 style="text-decoration: overline; margin-left: 360px ">Resume</h1>
+<center><img id="photopreview" alt="Uploaded Photo" src="" height="150px" width="150px"/><br><br><br>
+ 	<p style="font-size:22px;"><strong>Name:</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="resumename" ></input></p>
+  <p style="font-size:22px;"><strong>Gender</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="resumegender" ></input></p>
+ 	<p style="font-size:22px;"><strong>College:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="resumecollege" ></input></p> 
+ 	<p style="font-size:22px;"><strong>Degree :</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="resumedegree" ></input></p> 
+ 	<p style="font-size:22px;"><strong>Branch:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="resumebranch" ></input></p>
+ 	 <p style="font-size:22px;"><strong>Experience:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="resumeexp" ></input></p>
+ 	  	<p style="font-size:22px;"><strong>Technical Skills:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="resumets" ></input></p>
+ 	  	 	<p style="font-size:22px;"><strong>Country:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="resumecountry" ></input></p>
+ 	  	 	 	<p style="font-size:22px;"><strong>State:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="resumestate" ></input></p>
+ 	  	 	 	 	<p style="font-size:22px;"><strong>District:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="resumedistrict" ></input></p>
+ 	  	 	 	 	 	<p style="font-size:22px;"><strong>Mob No.:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="resumemob" ></input></p>
+             </center>
+	</div>
+		
+
+
+
+
+<script type="text/javascript" src="resume.js"></script>
+</body>
+</html>
